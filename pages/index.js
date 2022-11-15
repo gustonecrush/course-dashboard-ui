@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Main from "../src/components/Main";
 import Sidebar from "../src/components/Sidebar";
 
 const user = {
@@ -24,6 +25,7 @@ export default function Home() {
 
       <main className="w-full m-0 p-0 box-border flex font-poppins">
         <Sidebar user={user} />
+        <Main />
       </main>
     </div>
   );
