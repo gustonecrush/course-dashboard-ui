@@ -1,10 +1,13 @@
 import React from "react";
 
-function Button({ children, bg, textColor }) {
+function Button({ children, bg, textColor, margin = 0 }) {
   return (
-    <div className={`rounded-lg bg-${bg} text-${text} py-2 px-2`}>
+    <button
+    
+      className={`rounded-lg bg-[${bg}] text-[${textColor}] ml-${margin} py-2 px-2 flex items-center`}
+    >
       {children}
-    </div>
+    </button>
   );
 }
 
