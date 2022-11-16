@@ -5,7 +5,7 @@ function SearchBar({ placeholder }) {
   return (
     <form
       action=""
-      className="flex bg-[#F6F7F8] py-2 box-border rounded-lg px-8 ml-10 w-7/12 items-center"
+      className="flex bg-[#F6F7F8] py-2 box-border rounded-lg px-8 ml-10 w-8/12 items-center"
     >
       <label for="search">
         <Image
