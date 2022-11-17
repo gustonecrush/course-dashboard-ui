@@ -1,5 +1,6 @@
 import React from "react";
 import CourseProgressCard from "./CourseProgressCard";
+import OngoingCompetitionsCard from "./OngoingCompetitionsCard";
 
 const courses = [
   {
@@ -42,14 +43,34 @@ const ongoings = [
     name: "Design & Build Finance App",
     totalPrize: 28600870,
     desc: "Solving the problems that appear in the new era of technology world. We need come with the mobile frie...",
-    participants: [],
+    participants: [
+      { id: 1, name: "Izhar", profile: "pic.png" },
+      { id: 2, name: "Adam", profile: "pic-1.png" },
+      { id: 3, name: "Rika", profile: "pic-2.png" },
+      { id: 4, name: "Marsha", profile: "pic-3.png" },
+      { id: 5, name: "Isa", profile: "pic-4.png" },
+      { id: 6, name: "Izhar", profile: "pic.png" },
+      { id: 7, name: "Adam", profile: "pic-1.png" },
+      { id: 8, name: "Rika", profile: "pic-2.png" },
+      { id: 9, name: "Marsha", profile: "pic-3.png" },
+      { id: 10, name: "Isa", profile: "pic-4.png" },
+      { id: 11, name: "Izhar", profile: "pic.png" },
+      { id: 12, name: "Adam", profile: "pic-1.png" },
+      { id: 13, name: "Rika", profile: "pic-2.png" },
+      { id: 14, name: "Marsha", profile: "pic-3.png" },
+      { id: 15, name: "Isa", profile: "pic-4.png" },
+    ],
   },
   {
     id: 2,
     name: "Charity Website",
     totalPrize: 0,
     desc: "Helping elders to get what their needs from people in the world",
-    participants: [],
+    participants: [
+      { id: 1, name: "Izhar", profile: "pic.png" },
+      { id: 2, name: "Adam", profile: "pic-1.png" },
+      { id: 3, name: "Rika", profile: "pic-2.png" },
+    ],
   },
 ];
 
@@ -71,6 +92,11 @@ function Content() {
 
       <div class="ongoing-section px-15 py-5 flex flex-col mb-5">
         <Heading title={"Ongoing Competitions"} />
+        <div class="flex mt-7">
+          {ongoings.map((item, index) => (
+            <OngoingCompetitionsCard item={item} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );
